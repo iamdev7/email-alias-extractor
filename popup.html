@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Alias Extractor | مستخرج الإيميلات</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title" data-en="Email Extractor" data-ar="مستخرج الإيميلات">مستخرج الإيميلات</h1>
+      <button class="lang-toggle" id="langToggle">EN</button>
+    </div>
+
+    <div class="email-input-section">
+      <label class="label" data-en="Primary Email" data-ar="الإيميل الأساسي">الإيميل الأساسي</label>
+      <input type="email" id="primaryEmail" placeholder="a7@gmail.com" />
+      <button class="btn-primary" id="generateBtn" data-en="Generate Aliases" data-ar="توليد الإيميلات">توليد الإيميلات</button>
+    </div>
+
+    <div class="aliases-list" id="aliasesList">
+      <!-- Aliases will be dynamically added here -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
